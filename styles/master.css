@@ -1,0 +1,111 @@
+@import "reset.css";
+
+body {
+  background-image: url(../img/check-paper.png);
+  overflow-x: hidden;
+}
+
+p, a {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: .3s;
+}
+
+.fields div:nth-child(1) {
+  width: 100vw;
+  height: 15vh;
+  background: #000;
+}
+
+.fields div:nth-child(2) {
+  width: 7vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+
+.fields div:nth-child(3) {
+  width: 7vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #000;
+}
+
+
+
+/* header */
+header {
+  width: 100vw;
+  text-align: center;
+}
+
+header img {
+  padding: 2em;
+  padding-top: 2.5em;
+  width: 80vw;
+}
+
+.header__description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  width: 80vw;
+  /* position: absolute; */
+  left: 10vw;
+}
+
+.header__description p {
+  padding: 4vw 4vw 0;
+}
+
+.header__description p:nth-child(1),
+.header__description p:nth-child(3) {
+  text-align: right;
+}
+
+.header__description p:nth-child(2),
+.header__description p:nth-child(4) {
+  text-align: left;
+}
+
+
+main {
+  margin-left: 10vw;
+}
+
+.main__projects {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.main__projects a, p{
+  padding-top: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* / */
