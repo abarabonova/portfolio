@@ -7,7 +7,7 @@ body {
 
 p, a {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 3em;
+  font-size: 2.3em;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
@@ -20,12 +20,12 @@ a:hover {
 
 .fields div:nth-child(1) {
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   background: #000;
 }
 
 .fields div:nth-child(2) {
-  width: 7vw;
+  width: 27vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@ a:hover {
 }
 
 .fields div:nth-child(3) {
-  width: 7vw;
+  width: 27vw;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -53,7 +53,7 @@ header {
 header img {
   padding: 2em;
   padding-top: 2.5em;
-  width: 80vw;
+  width: 42vw;
 }
 
 .header__description {
@@ -61,9 +61,8 @@ header img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
-  width: 80vw;
-  /* position: absolute; */
-  left: 10vw;
+  width: 56vw;
+  margin-left: 18vw;
 }
 
 .header__description p {
@@ -80,7 +79,12 @@ header img {
   text-align: left;
 }
 
+.header__media a {
+  padding: 1em;
+}
 
+
+/* main */
 main {
   margin-left: 10vw;
 }
@@ -92,7 +96,7 @@ main {
 }
 
 .main__projects a, p{
-  padding-top: 2vw;
+  padding: 2vw;
 }
 
 
