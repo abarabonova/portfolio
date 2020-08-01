@@ -18,6 +18,10 @@ a:hover {
   transition: .3s;
 }
 
+.line {
+  text-align: center;
+}
+
 .fields div:nth-child(1) {
   width: 100vw;
   height: 10vh;
@@ -79,6 +83,10 @@ header img {
   text-align: left;
 }
 
+.header__media {
+  padding-top: 3vw;
+}
+
 .header__media a {
   padding: 1em;
 }
@@ -86,10 +94,11 @@ header img {
 
 /* main */
 main {
-  margin-left: 10vw;
+  margin-left: 27vw;
 }
 
 .main__projects {
+  width: 54vw;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(10, 1fr);
@@ -99,6 +108,39 @@ main {
   padding: 2vw;
 }
 
+
+@media (max-width: 768px) {
+  .fields div {
+    display: none;
+  }
+
+  header img {
+    width: 150vw;
+  }
+
+  .header__description {
+    margin-left: 9vw;
+  }
+
+  .header__media {
+    padding-top: 15vw;
+    width: 150vw;
+  }
+
+  .line {
+    width: 150vw;
+  }
+
+  main {
+    margin-left: 15vw;
+  }
+
+  .main__projects {
+    width: 150vw;
+    padding-top: 5vw;
+  }
+
+}
 
 
 
