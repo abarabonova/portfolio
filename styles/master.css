@@ -54,7 +54,7 @@ header {
   text-align: center;
 }
 
-header img {
+.header__img {
   padding: 2em;
   padding-top: 2.5em;
   width: 42vw;
@@ -94,14 +94,38 @@ header img {
 
 /* main */
 main {
-  margin-left: 27vw;
+  /* margin-left: 27vw; */
+  width: 100vw;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.main__video {
+  display: inline-flex;
+  flex-flow: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.main__video video {
+  margin: 2%;
+}
+
+.main__video img {
+  margin-bottom: 10%;
 }
 
 .main__projects {
-  width: 54vw;
+  width: 45vw;
+  text-align: left;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(10, 1fr);
+}
+
+.main__projects p {
+  grid-columns: 2/3;
+  text-align: right;
 }
 
 .main__projects a, p{
