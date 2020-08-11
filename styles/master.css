@@ -113,7 +113,9 @@ main {
 
 .main__video img {
   margin-bottom: 10%;
+  width: 40vw;
 }
+
 
 .main__projects {
   width: 45vw;
@@ -132,13 +134,17 @@ main {
   padding: 2vw;
 }
 
+footer {
+  width: 100vw;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .fields div {
     display: none;
   }
 
-  header img {
+  .header__img {
     width: 150vw;
   }
 
@@ -162,6 +168,10 @@ main {
   .main__projects {
     width: 150vw;
     padding-top: 5vw;
+  }
+
+  .main__video img {
+    width: 100vw;
   }
 
 }
