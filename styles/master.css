@@ -311,24 +311,51 @@ main div a {
 
 
 .main_project_11 {
-  /* background: var(--light-red); */
+  background: var(--light-blue);
+}
+
+.main_project_11:hover {
   background-image: url(../img/essen-ui.jpg);
   background-size: cover;
   background-position-y: center;
 }
 
+.main_project_11:hover a {
+  opacity: 0;
+  width: 100%;
+  height: 60%;
+}
+
 .main_project_12 {
-  /* background: var(--light-red); */
+  background: var(--orange);
+}
+
+.main_project_12:hover {
   background-image: url(../img/tomorrow.jpg);
   background-size: cover;
   background-position-y: center;
 }
 
+.main_project_12:hover a {
+  opacity: 0;
+  width: 100%;
+  height: 60%;
+}
+
 .main_project_13 {
-  /* background: var(--light-red); */
+  background: var(--light-green);
+}
+
+.main_project_13:hover {
   background-image: url(../img/point.jpg);
   background-size: cover;
   background-position-y: center;
+}
+
+.main_project_13:hover a {
+  opacity: 0;
+  width: 100%;
+  height: 60%;
 }
 
 footer {
