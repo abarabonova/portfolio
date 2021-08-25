@@ -228,7 +228,7 @@ main div a {
 }
 
 .main_project_6 {
-  background: var(--dark-red);
+  background: var(--orange);
 }
 
 .main_project_6:hover {
@@ -538,6 +538,7 @@ footer {
     position: absolute;
     top: 50vh;
     width: 50vw;
+    line-height: 125%;
   }
 
   .first-screen p a {
@@ -565,63 +566,122 @@ footer {
 
 
 @media (max-width: 1024px) {
-  /* .fields div {
-    display: none;
-  }
-
-  .header__img {
-    width: 150vw;
-  }
-
-  .header__description {
-    margin-left: 9vw;
-  }
-
-  .header__media {
-    padding-top: 15vw;
-    width: 150vw;
-  }
-
-  .line {
-    width: 150vw;
-  }
-
-  main {
-    margin-left: 15vw;
-  }
-
-  .main__projects {
-    width: 150vw;
-    padding-top: 5vw;
-  }
-
-  .main__video img {
-    width: 100vw;
-  } */
 
   body {
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
-  .work_in_progress {
+  h1 {
+    font-size: 14vw;
+  }
+
+  .header__span {
+    flex-wrap: wrap;
+    margin: 8vw 3vw;
+  }
+
+  .header__span p {
+    padding-bottom: 12px;
+  }
+
+  .contacts {
+    opacity: 0;
+  }
+
+  header {
+    height: 36vh;
+  }
+
+  p, a {
+    letter-spacing: -0.05em;
+    font-size: 1.5em;
+  }
+
+  main div {
+    height: 36vh;
+    border-radius: 30px;
+  }
+
+  main div a {
+    line-height: 110%;
+  }
+
+  footer a {
+    border-radius: 30px;
+    height: 30vh;
+  }
+
+  .footer__portfolio_hse {
+    height: 20vh;
+    padding: 20px;
+
+
+    border-radius: 30px;
+    text-align: center;
+  }
+
+
+  /* страницы */
+
+  .first-screen {
+    height: 26vh;
+  }
+
+  .first-screen img {
+    width: 50vw;
+  }
+
+  .first-screen p {
+    width: 94vw;
+    top: 20vh;
+
+    font-size: 1.5em;
+  }
+
+  .content img, video {
+    margin: 1vh !important;
+    width: 90vw !important;
+  }
+
+  .img-video {
+    height: 90vw !important;
+    width: 90vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .work_in_progress {
     display: block;
     background: #e7e7e7;
     height: 100vh;
     width: 100vw;
-  }
-  .work_in_progress h1{
+  } */
+  /* .work_in_progress h1{
     /* top: 50vh;
     left: 50vw; */
     /* transform: translate(-50%;-50%); */
-    color: #aaaaaa;
+    /* color: #aaaaaa; */
 
-    text-align: left;
-  }
+    /* text-align: left; */
+  /* } */
 
-  header, main, footer, .contacts {
+  /* header, main, footer, .contacts {
     display: none;
-  }
+  } */
 
 }
 
