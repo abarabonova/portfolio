@@ -541,6 +541,16 @@ section {
     width: 70vw;
   }
 
+  .hydra {
+    bottom: 0;
+    width: 63vw;
+    right: 10vw;
+  }
+
+  .haier-11 {
+    z-index: 5;
+  }
+
   .achievements {
     padding: 80px 20px 0px 20px;
   }
