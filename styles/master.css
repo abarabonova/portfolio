@@ -38,6 +38,26 @@
   color: var(--pink);
 }
 
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* Could Use thise as well for Individual Controls */
+video::-webkit-media-controls-play-button {
+}
+
+video::-webkit-media-controls-volume-slider {
+}
+
+video::-webkit-media-controls-mute-button {
+}
+
+video::-webkit-media-controls-timeline {
+}
+
+video::-webkit-media-controls-current-time-display {
+}
+
 /* ОСНОВНОЕ */
 
 body {
@@ -144,7 +164,6 @@ section {
   width: 68vw;
   border-radius: 4px;
   padding-top: 40px;
-  height: fit-content;
   animation: scale-mini 7s infinite ease-in-out;
   transform: perspective(1400px) translateX(-6vw);
 }
@@ -255,6 +274,7 @@ section {
 
 /* ТРЕТЬЯ СЕКЦИЯ */
 .career {
+  width: 65vw;
   margin-top: 12vw;
   margin-bottom: 20vw;
 
