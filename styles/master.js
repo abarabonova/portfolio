@@ -14,6 +14,13 @@ $("video").click(function () {
   }
 });
 
+document.body.addEventListener("click", function () {
+  const video = document.querySelector("video");
+  if (video) {
+    video.play();
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const imageSets = {
     case1: [

@@ -567,7 +567,7 @@ section {
 
 .card-popup__info p {
   width: auto;
-  font-family: Suisse Intl;
+  font-family: "Suisse";
   font-size: 15px;
   font-style: normal;
   font-weight: 450;
@@ -577,7 +577,7 @@ section {
 }
 
 .card-popup__info__left p {
-  font-family: Suisse Intl;
+  font-family: "Suisse";
   font-size: 16px;
   line-height: 20px; /* 125% */
   font-style: normal;
@@ -592,7 +592,7 @@ section {
 }
 
 .card-popup__info__left__text h2 {
-  font-family: Panama Demo;
+  font-family: "Panama";
   font-size: 70px;
   padding-top: 2px;
   font-style: normal;
