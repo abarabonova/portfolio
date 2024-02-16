@@ -88,9 +88,7 @@ body {
 
 a:hover,
 button:hover,
-.card:nth-child(2),
-.card:nth-child(3),
-.card:nth-child(4) {
+.card {
   cursor: url("../img/new-1/emoji02.png") 30 30, auto;
 }
 
@@ -159,6 +157,33 @@ a:hover {
 
 .name {
   width: 90vw;
+}
+
+.first-description {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 0 40px;
+  margin-top: -20px;
+}
+
+.first-description p {
+  color: #2f807f; /* Цвет текста */
+  width: 25%;
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 1.2;
+  letter-spacing: 0.93px;
+  text-transform: uppercase;
+  /* text-align: center; */
+  /* Множественные тени для создания эффекта скругленной обводки */
+  text-shadow: -0.5px -0.5px 0 #2f807f, 0.5px -0.5px 0 #2f807f,
+    -0.5px 0.5px 0 #2f807f, 0.5px 0.5px 0 #2f807f, -1px 0 0 #2f807f,
+    1px 0 0 #2f807f, 0 1px 0 #2f807f, 0 -1px 0 #2f807f, -1px -1px 0 #2f807f,
+    1px -1px 0 #2f807f, -1px 1px 0 #2f807f, 1px 1px 0 #2f807f;
 }
 
 section {
@@ -461,7 +486,7 @@ section {
   width: 100vw;
   padding: 0 3vw;
   padding-top: 40px;
-  margin-bottom: 10vw;
+  margin-bottom: 8vw;
   row-gap: 5vw;
 }
 
@@ -645,12 +670,78 @@ section {
   background: var(--green);
 }
 
+.wrapper-myguys,
+.wrapper-principles {
+  transition: 0.25s;
+  text-decoration: none;
+  -webkit-text-stroke: 0px var(--pink) !important;
+}
+
+.wrapper-myguys:hover,
+.wrapper-principles:hover {
+  transform: scale(0.98);
+}
+
+/* ПРИНЦИПЫ */
+.principles {
+  width: 96vw;
+  height: 26vw;
+  margin: 0 1.5vw;
+  border-radius: 24px;
+  background: var(--green);
+
+  display: flex;
+  justify-content: space-between;
+}
+.principles h3 {
+  width: 40vw;
+  padding: 30px;
+  font-family: "Panama";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 49.5px; /* 91.667% */
+  letter-spacing: -1.89px;
+  color: #ffa8c2;
+  text-transform: uppercase;
+}
+
+.principles img {
+  height: 100%;
+}
+
+.myguys {
+  width: 96vw;
+  height: 12vw;
+  margin: 1.5vw;
+  border-radius: 24px;
+  background: #2f2f2f;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myguys h3 {
+  font-family: "Suisse";
+  font-weight: bold;
+  font-size: 22px;
+  -webkit-text-stroke: 1px var(--pink);
+  color: var(--pink);
+}
+
+.myguys img {
+  height: 100%;
+}
+
 /* ДОСТИЖЕНИЯ */
 .achievements {
   font-family: "Panama", serif;
   font-weight: normal;
   text-transform: uppercase;
   padding: 0px 40px 0px 40px;
+  margin-top: 10vw;
   position: relative;
 
   display: flex;
@@ -819,6 +910,15 @@ section {
     width: 70vw;
   }
 
+  .first-description p {
+    font-size: 12px;
+    width: 30%;
+    text-shadow: -0.25px -0.25px 0 #2f807f, 0.25px -0.25px 0 #2f807f,
+      -0.25px 0.25px 0 #2f807f, 0.25px 0.25px 0 #2f807f, -0.5px 0 0 #2f807f,
+      0.5px 0 0 #2f807f, 0 -0.5px 0 #2f807f, 0 0.5px 0 #2f807f;
+    letter-spacing: 0px;
+  }
+
   .career {
     width: 60vw;
   }
@@ -885,7 +985,7 @@ section {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   body {
     margin-top: 0px;
   }
@@ -922,6 +1022,13 @@ section {
 
   .name {
     width: 90vw;
+  }
+
+  .first-description {
+    padding: 0 16px;
+  }
+
+  .first-description p {
   }
 
   /* СЕКЦИЯ 1 */
