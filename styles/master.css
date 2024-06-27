@@ -735,6 +735,59 @@ section {
   height: 100%;
 }
 
+/* ЭБАУТ */
+.about {
+  font-family: "Panama", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  padding: 0px 40px 0px 40px;
+  margin-top: 10vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  grid-gap: 80px;
+  color: var(--green);
+}
+
+.about__heading {
+  width: 50vw;
+}
+.about__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__wrapper__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 12px; */
+}
+
+.about__wrapper__left p:first-child {
+  font-family: "Suisse";
+  -webkit-text-stroke: 4px var(--green);
+  padding-bottom: 2px;
+}
+
+.about__wrapper__right {
+  width: 50%;
+}
+.about__wrapper__right p {
+  text-indent: 50px;
+  padding-bottom: 24px;
+}
+
 /* ДОСТИЖЕНИЯ */
 .achievements {
   font-family: "Panama", serif;
@@ -943,6 +996,24 @@ section {
 
   .card-popup__info {
     flex-direction: column;
+  }
+
+  .about {
+    grid-gap: 60px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+  }
+  .about__wrapper__left {
+    width: 100%;
+    order: 3;
+  }
+
+  .about__wrapper__right {
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   .achievements {
@@ -1282,10 +1353,34 @@ section {
     width: 90vw;
   }
 
+  .about {
+    grid-gap: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px 16px 0px 16px;
+  }
+
+  .about__heading {
+    width: 55vw;
+  }
+
+  .about__wrapper__right {
+    padding-bottom: 20px;
+  }
+
+  .about__wrapper__right p {
+    padding-bottom: 20px;
+    text-indent: 40px;
+  }
+
+  .about__wrapper__left p:first-child {
+    -webkit-text-stroke: 3px var(--green);
+  }
+
   /* /АЧИВМЕНТС/ */
 
   .achievements {
-    padding: 60px 20px 0px 20px;
+    padding: 60px 16px 0px 16px;
     grid-gap: 50px;
   }
 
@@ -1307,6 +1402,7 @@ section {
   .caption {
     font-size: 10px;
     margin-top: 60px;
+    padding: 16px 16px;
   }
 
   .caption p {
