@@ -756,6 +756,11 @@ section {
   color: var(--green);
 }
 
+.about a {
+  color: var(--dark-pink);
+  text-decoration: none;
+}
+
 .about__heading {
   width: 50vw;
 }
