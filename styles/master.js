@@ -58,14 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "img/new-1/haier-case03.png",
     ],
     case4: [
-      // "img/new-1/openmedia-case.gif",
-      "img/new-1/openmedia-case01.png",
-      "img/new-1/openmedia-case02.png",
-      "img/new-1/openmedia-case03.png",
-      "img/new-1/openmedia-case04.png",
-      "img/new-1/openmedia-case05.png",
-      "img/new-1/openmedia-case06.png",
-      "img/new-1/openmedia-case07.png",
+      "img/new-1/Tinkoff-case03.png",
+      "img/new-1/Tinkoff-case02.png",
+      "img/new-1/Tinkoff-case01.png",
+      "img/new-1/Tinkoff-case04.png",
     ],
   };
 
@@ -74,10 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
     return setInterval(function () {
       currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
       imgElement.src = imagesArray[currentImageIndex];
-    }, 300);
+    }, 500); // Меняем изображение каждую секунду
   }
 
-  document.querySelectorAll(".card img[data-case]").forEach((imgElement) => {
+  document.querySelectorAll(".case-card").forEach((cardElement) => {
+    const imgElement = cardElement.querySelector("img[data-case]");
     const caseKey = imgElement.dataset.case;
     const imagesArray = imageSets[caseKey];
 
@@ -87,11 +84,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let interval;
-    imgElement.addEventListener("mouseover", function () {
+    cardElement.addEventListener("mouseover", function () {
       interval = startSlideshow(imgElement, imagesArray);
     });
 
-    imgElement.addEventListener("mouseout", function () {
+    cardElement.addEventListener("mouseout", function () {
       clearInterval(interval);
       imgElement.src = imagesArray[0];
     });
