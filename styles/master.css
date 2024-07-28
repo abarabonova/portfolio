@@ -207,7 +207,7 @@ section {
 .content__box {
   position: relative;
   width: 100vw;
-  margin-bottom: 10vw;
+  margin-bottom: 13vw;
 
   display: flex;
   justify-content: center;
@@ -221,8 +221,8 @@ section {
 
 .lalal {
   position: absolute;
-  top: 0;
-  left: 3vw;
+  top: 13vw;
+  right: 3vw;
 
   width: 50vw;
   animation: scale-mini 7s infinite ease-in-out;
@@ -231,22 +231,32 @@ section {
 .mist-preview {
   width: 27vw;
 
-  margin: 20vw 0 0 14vw;
+  margin: 30vw 0 0 14vw;
   z-index: 2;
   border-radius: 8px;
   animation: scale 4s infinite ease-in-out;
   transform: perspective(1400px) translateX(-6vw);
 }
 
-.lalal-player {
+.zora {
   position: absolute;
-  right: 5vw;
-  top: 4vw;
-
-  width: 30vw;
+  left: 3vw;
+  top: 67vw;
+  z-index: 10;
+  width: 35vw;
   animation: scale 16s infinite ease-in-out;
 }
 
+.lalal-player {
+  position: absolute;
+  left: 5vw;
+  top: -1vw;
+  z-index: 10;
+
+  width: 40vw;
+  animation: scale 14s infinite ease-in-out;
+}
+/*
 .dye-big {
   width: 60vw;
   border-radius: 4px;
@@ -257,9 +267,9 @@ section {
 
   animation: scale-mini 11s infinite ease-in-out;
   transform: perspective(1400px) translateX(-6vw);
-}
+} */
 
-.dye-mini {
+/* .dye-mini {
   position: absolute;
   top: -29vw;
   z-index: 2;
@@ -267,7 +277,7 @@ section {
 
   width: 25vw;
   animation: scale 5s infinite ease-in-out;
-}
+} */
 
 .haier-1 {
   position: absolute;
@@ -283,13 +293,12 @@ section {
 
 .lalal-sign {
   position: absolute;
-  top: 29vw;
-  left: 72vw;
+  top: 59vw;
+  right: 3vw;
   z-index: 2;
+  width: 28vw;
 
-  width: 22vw;
-
-  animation: scale-mid-rev 6s infinite ease-in-out;
+  animation: scale 6s infinite ease-in-out;
 }
 
 .haier-6 {
@@ -301,21 +310,21 @@ section {
   width: 30vw;
   animation: scale-mini 3s infinite ease-in-out;
 }
-.essen-3 {
+/* .essen-3 {
   position: absolute;
   top: 26vw;
   left: -1vw;
   width: 30vw;
   border-radius: 6px;
   animation: scale-mid-rev 9s infinite ease-in-out;
-}
+} */
 
 /* ВТОРАЯ СЕКЦИЯ */
 
-.synth {
+/* .synth {
   width: 48vw;
   transform: translate(-20vw, 9vw);
-}
+} */
 
 .haier-2 {
   position: absolute;
@@ -327,7 +336,7 @@ section {
   width: 16vw;
   animation: scale 4s infinite ease-in-out;
 }
-
+/*
 .hanti {
   width: 20vw;
 
@@ -335,7 +344,7 @@ section {
   top: 4vw;
   right: 18vw;
   animation: scale-mid 5s infinite ease-in-out;
-}
+} */
 
 .haier-3 {
   width: 50vw;
@@ -347,7 +356,7 @@ section {
 }
 
 /* ТРЕТЬЯ СЕКЦИЯ */
-.career {
+/* .career {
   width: 60vw;
   margin-top: 12vw;
   margin-bottom: 20vw;
@@ -365,17 +374,17 @@ section {
   right: 5vw;
   top: 7vw;
   animation: scale-mid 5.5s infinite ease-in-out;
-}
+} */
 
 .tomorrow {
   width: 16vw;
   position: absolute;
-  right: 2vw;
-  top: 45vw;
+  right: 8vw;
+  top: 3vw;
   z-index: 3;
   animation: scale-mini 5.5s infinite ease-in-out;
 }
-
+/*
 .haier-9 {
   width: 18vw;
 
@@ -386,10 +395,10 @@ section {
 
   z-index: -1;
   animation: scale-mid-rev 8s infinite ease-in-out;
-}
+} */
 
 /* ЧЕТВЕРТАЯ СЕКЦИЯ */
-
+/*
 .hunti-1 {
   width: 16vw;
 
@@ -397,8 +406,8 @@ section {
   top: -23vw;
   right: 8vw;
   animation: scale-mid 4s infinite ease-in-out;
-}
-
+} */
+/*
 .point {
   width: 16vw;
 
@@ -408,24 +417,24 @@ section {
 
   z-index: 3;
   animation: scale 6s infinite ease-in-out;
-}
+} */
 
-.locus {
+/* .locus {
   width: 58vw;
   margin-top: 7vw;
   margin-bottom: 14vw;
   transform: translate(-13vw, -10vw);
-}
+} */
 
-.hydra {
+/* .hydra {
   position: absolute;
   bottom: 0;
   right: 10vw;
 
   z-index: 2;
   animation: scale 6s infinite ease-in-out;
-}
-
+} */
+/*
 .haier-10 {
   width: 19vw;
 
@@ -442,22 +451,31 @@ section {
   bottom: 10vw;
   left: 15vw;
   animation: scale-mid 5s infinite ease-in-out;
-}
+} */
 
 .pumpkin {
   width: 30vw;
   position: absolute;
-  top: 5vw;
-  z-index: 3;
-  left: 60vw;
+  top: -7vw;
+  z-index: 13;
+  left: 27vw;
   animation: scale 5s infinite ease-in-out;
 }
 
 .haier-btn {
   position: relative;
-  top: -13vw;
-  left: -37vw;
-  width: 20vw;
+  top: 4vw;
+  right: -32vw;
+  width: 22vw;
+  z-index: 10;
+  animation: scale 8s infinite ease-in-out;
+}
+
+.three_d {
+  position: relative;
+  top: 8vw;
+  left: -29vw;
+  width: 22vw;
   z-index: 10;
   animation: scale-mid 8s infinite ease-in-out;
 }
@@ -1248,20 +1266,20 @@ section {
     top: -7vw;
     z-index: 2;
     right: auto;
-    left: 2vw;
-    width: 43vw;
+    left: 3vw;
+    width: 83vw;
   }
 
   .lalal {
     width: 90vw;
-    top: 18vw;
+    top: 28vw;
     left: 5vw;
   }
 
   .mist-preview {
     border-radius: 4px;
     width: 57vw;
-    margin: 63vw 0 0 42vw;
+    margin: 75vw 0 0 42vw;
   }
 
   .dye-big {
@@ -1278,15 +1296,16 @@ section {
   }
 
   .haier-btn {
-    top: 9vw;
-    left: -26vw;
-    width: 44vw;
+    top: 13vw;
+    left: 40vw;
+    width: 54vw;
+    opacity: 0;
   }
 
   .haier-1 {
     top: 80vw;
     left: 5vw;
-    width: 30vw;
+    width: 39vw;
   }
 
   .haier-2 {
@@ -1306,7 +1325,7 @@ section {
 
   .lalal-sign {
     left: 28vw;
-    width: 60vw;
+    width: 65vw;
     top: 116vw;
   }
 
@@ -1361,7 +1380,9 @@ section {
   .tomorrow {
     width: 30vw;
     right: 0vw;
-    top: 68vw;
+    top: 13vw;
+    z-index: 2;
+    opacity: 0;
   }
 
   .essen-2 {
@@ -1388,7 +1409,7 @@ section {
     top: -17vw;
     right: 1vw;
   }
-
+  /*
   .point {
     top: 68vw;
     width: 29vw;
@@ -1400,7 +1421,7 @@ section {
     z-index: -1;
     position: static;
     transform: translate(-10vw, -10vw);
-  }
+  } */
 
   .hydra {
     z-index: 0;
@@ -1415,6 +1436,18 @@ section {
     right: 6vw;
   }
 
+  .zora {
+    left: 2vw;
+    width: 65vw;
+    top: 177vw;
+  }
+
+  .three_d {
+    top: 17vw;
+    left: -6vw;
+    width: 42vw;
+  }
+
   .haier-11 {
     width: 39vw;
     bottom: 5vw;
@@ -1422,9 +1455,9 @@ section {
   }
 
   .pumpkin {
-    width: 40vw;
-    top: 0vw;
-    left: 1vw;
+    width: 50vw;
+    top: 28vw;
+    left: 11vw;
   }
 
   /* КЕЙСЫ */
