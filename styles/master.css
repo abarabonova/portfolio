@@ -282,10 +282,8 @@ section {
 .haier-1 {
   position: absolute;
   top: 38vw;
-  left: 14vw;
-
+  left: 26vw;
   z-index: 2;
-
   width: 12vw;
 
   animation: scale-mid 7s infinite ease-in-out;
@@ -321,10 +319,15 @@ section {
 
 /* ВТОРАЯ СЕКЦИЯ */
 
-/* .synth {
-  width: 48vw;
-  transform: translate(-20vw, 9vw);
-} */
+.synth {
+  display: block;
+  position: absolute;
+  left: 2vw;
+  width: 29vw;
+  top: 26vw;
+  border-radius: 16px;
+  animation: scale-mid-rev 7s infinite ease-in-out;
+}
 
 .haier-2 {
   position: absolute;
@@ -464,10 +467,19 @@ section {
 
 .haier-btn {
   position: relative;
-  top: 4vw;
-  right: -32vw;
+  top: 10vw;
+  right: -38vw;
   width: 22vw;
   z-index: 10;
+  animation: scale 8s infinite ease-in-out;
+}
+
+.mist-phone {
+  position: absolute;
+  top: -13vw;
+  right: 31vw;
+  width: 17vw;
+  z-index: 0;
   animation: scale 8s infinite ease-in-out;
 }
 
@@ -1346,8 +1358,7 @@ section {
   }
 
   .synth {
-    width: 68vw;
-    transform: translate(-10vw, 2vw);
+    display: none;
   }
 
   .haier-3 {
@@ -1443,9 +1454,18 @@ section {
   }
 
   .three_d {
-    top: 17vw;
-    left: -6vw;
+    top: 26vw;
+    left: -37vw;
     width: 42vw;
+  }
+
+  .mist-phone {
+    position: absolute;
+    top: -22vw;
+    right: 4vw;
+    width: 34vw;
+    z-index: 0;
+    animation: scale 8s infinite ease-in-out;
   }
 
   .haier-11 {

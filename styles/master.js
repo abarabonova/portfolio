@@ -4,7 +4,7 @@ var vids = $("video");
 $.each(vids, function () {
   this.controls = false;
 });
-//Loop though all Video tags and set Controls as false
+// Loop through all Video tags and set Controls as false
 
 $("video").click(function () {
   if (this.paused) {
@@ -70,11 +70,17 @@ document.addEventListener("DOMContentLoaded", function () {
     return setInterval(function () {
       currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
       imgElement.src = imagesArray[currentImageIndex];
-    }, 500); // Меняем изображение каждую секунду
+    }, 500); // Меняем изображение каждые полсекунды
   }
 
   document.querySelectorAll(".case-card").forEach((cardElement) => {
     const imgElement = cardElement.querySelector("img[data-case]");
+
+    // Если imgElement не найден или не имеет data-case, пропускаем эту карточку
+    if (!imgElement || !imgElement.dataset.case) {
+      return; // Пропустить эту карточку
+    }
+
     const caseKey = imgElement.dataset.case;
     const imagesArray = imageSets[caseKey];
 
@@ -84,13 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let interval;
-    cardElement.addEventListener("mouseover", function () {
+
+    cardElement.addEventListener("mouseenter", function () {
+      // Начинаем слайдшоу при входе курсора на карточку
       interval = startSlideshow(imgElement, imagesArray);
     });
 
-    cardElement.addEventListener("mouseout", function () {
+    cardElement.addEventListener("mouseleave", function () {
+      // Останавливаем слайдшоу при выходе курсора с карточки
       clearInterval(interval);
-      imgElement.src = imagesArray[0];
+      imgElement.src = imagesArray[0]; // Возвращаем первую картинку
     });
   });
 });
