@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500); // Меняем изображение каждые полсекунды
   }
 
-  document.querySelectorAll(".case-card").forEach((cardElement) => {
+  document.querySelectorAll(".case-card-horizontal").forEach((cardElement) => {
     const imgElement = cardElement.querySelector("img[data-case]");
 
     // Если imgElement не найден или не имеет data-case, пропускаем эту карточку
@@ -153,3 +153,14 @@ function closeAllPopups() {
     popup.style.bottom = "-100vh";
   });
 }
+
+"use strict";
+
+const burgerMenu = document.querySelector(".burger-menu");
+const navLinks = document.querySelector(".nav-links");
+
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("open");
+  navLinks.classList.toggle("open");
+  document.body.style.overflow = navLinks.classList.contains("open") ? "hidden" : "scroll";
+});
